@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ibZoomin"
+            android:layout_width="68dp"
+            android:layout_height="52dp"
+            android:text="ZIn"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/ibZoomout"
+            android:layout_width="68dp"
+            android:layout_height="52dp"
+            android:text="ZOut"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/ibRotate"
+            android:layout_width="68dp"
+            android:layout_height="52dp"
+            android:text="Rota"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/ibBright"
+            android:layout_width="68dp"
+            android:layout_height="52dp"
+            android:text="Brig"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/ibDark"
+            android:layout_width="68dp"
+            android:layout_height="52dp"
+            android:text="Dark"
+            android:textSize="12dp"/>
+
+        <Button
+            android:id="@+id/ibGray"
+            android:layout_width="68dp"
+            android:layout_height="52dp"
+            android:text="Gray"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/prevButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:text="Prev"/>
+        <Button
+            android:id="@+id/colorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_brush_24"
+            android:text="Pen" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_save_alt_24"
+            android:text="Save" />
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+            android:text="Next "/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pictureLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/imageViewButton"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_burst_mode_24"
+            android:text="Image Viewer" />
+
+        <Button
+            android:id="@+id/photoshopButton"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_auto_fix_high_24"
+            android:text="Mini Photoshop" />
+    </LinearLayout>
+
+</LinearLayout>
